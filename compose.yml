@@ -19,7 +19,7 @@ services:
       - $HOME/.kot/config.yaml:/kot/config.yaml
     environment:
       SELENIUM_URL: 'http://selenium:4444/wd/hub'
-    command: kot scrape --console --browser-kind remote
+    command: scrape --console --browser-kind remote
     tty: true
     depends_on:
       selenium:

@@ -18,5 +18,5 @@ else
   exit 1
 fi
 
-docker compose run --rm app kot scrape ${CONSOLE} --browser-kind remote
+docker compose run --build --rm app scrape ${CONSOLE} --browser-kind remote
 docker compose down
